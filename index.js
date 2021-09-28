@@ -30,6 +30,12 @@ const accEmbed = new MessageEmbed()
  .addField(`Currently logged in as:`, bot.user.displaName)
  .setTimestamp()
 
+const skinEmbed = new MessageEmbed()
+ .setColor('GREEN')
+ .setTitle('Current Equipped Skin')
+ .addField(`Wearing:`, `bot.`)
+ .setTimestamp()
+
  client.on('message', msg => {
    if (msg == '--account') {
      msg.channel.send(accEmbed);

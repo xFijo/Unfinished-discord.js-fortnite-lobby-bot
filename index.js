@@ -33,7 +33,7 @@ const accEmbed = new MessageEmbed()
 const skinEmbed = new MessageEmbed()
  .setColor('GREEN')
  .setTitle('Current Equipped Skin')
- .addField(`Wearing:`, `bot.`)
+ .addField(`Wearing:`, `bot.`) // unfinished, check https://fnbr.js/ for more information
  .setTimestamp()
 
  client.on('message', msg => {
